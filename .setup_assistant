@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: gazebo_simulation
+    relative_path: description/manipulator.urdf.xacro
+  srdf:
+    relative_path: config/motoman_sia5f.srdf
+  package_settings:
+    author_name: Sara Federico
+    author_email: sara.federico99@hotmail.it
+    generated_timestamp: 1696351284
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity

@@ -1,0 +1,54 @@
+# This config file is used by ros2_control
+controller_manager:
+  ros__parameters:
+    update_rate: 100  # Hz
+
+    yaskawa_arm:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+
+    yaskawa_fingers:
+      type: position_controllers/GripperActionController
+
+
+    yaskawa_push:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+yaskawa_arm:
+  ros__parameters:
+    joints:
+      - joint_s
+      - joint_l
+      - joint_e
+      - joint_u
+      - joint_r
+      - joint_b
+      - joint_t
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+yaskawa_fingers:
+  ros__parameters:
+    joint: right_joint
+yaskawa_push:
+  ros__parameters:
+    joints:
+      - joint_s
+      - joint_l
+      - joint_e
+      - joint_u
+      - joint_r
+      - joint_b
+      - joint_t
+      - right_joint
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity

@@ -1,0 +1,11 @@
+# Default initial positions for motoman_sia5f's ros2_control fake system
+
+initial_positions:
+  joint_b: 0
+  joint_e: 0
+  joint_l: 0
+  joint_r: 0
+  joint_s: 0
+  joint_t: 0
+  joint_u: 0
+  right_joint: 0
