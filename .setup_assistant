@@ -1,6 +1,6 @@
 moveit_setup_assistant_config:
   urdf:
-    package: gazebo_simulation
+    package: gazebo_simulation_ros2
     relative_path: description/manipulator.urdf.xacro
   srdf:
     relative_path: config/motoman_sia5f.srdf
