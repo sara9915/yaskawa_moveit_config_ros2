@@ -7,7 +7,7 @@ moveit_setup_assistant_config:
   package_settings:
     author_name: Sara Federico
     author_email: sara.federico99@hotmail.it
-    generated_timestamp: 1696351284
+    generated_timestamp: 1696518496
   control_xacro:
     command:
       - position

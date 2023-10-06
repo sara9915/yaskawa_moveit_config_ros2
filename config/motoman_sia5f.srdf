@@ -20,49 +20,36 @@
         <joint name="joint_t"/>
         <joint name="link_t-tool0"/>
     </group>
-    <group name="yaskawa_fingers">
+    <group name="yaskawa_gripper">
         <link name="base_link_gripper"/>
         <link name="WSG-32_Body"/>
         <link name="Base_Jaw_2"/>
         <link name="ext_finger_2"/>
         <link name="tactile_2"/>
+        <link name="push_extension"/>
         <link name="Base_Jaw_1"/>
         <link name="ext_finger_1"/>
         <link name="tactile_1"/>
-        <link name="push_extension"/>
-    </group>
-    <group name="yaskawa_push">
-        <joint name="world"/>
-        <joint name="joint_s"/>
-        <joint name="joint_l"/>
-        <joint name="joint_e"/>
-        <joint name="joint_u"/>
-        <joint name="joint_r"/>
-        <joint name="joint_b"/>
-        <joint name="joint_t"/>
-        <joint name="link_t-tool0"/>
-        <joint name="tool0_joint_base_gripper"/>
-        <joint name="base_to_wsg"/>
-        <joint name="left_joint"/>
-        <joint name="jaw_ext_2"/>
-        <joint name="$tactile_2_joint_ext_finger_2"/>
-        <joint name="tactile_joint_pusher"/>
-        <joint name="right_joint"/>
-        <joint name="jaw_ext_1"/>
-        <joint name="$tactile_1_joint_ext_finger_1"/>
+        <link name="camera_ext"/>
     </group>
     <!--GROUP STATES: Purpose: Define a named state for a particular group, in terms of joint values. This is useful to define states like 'folded arms'-->
     <group_state name="home" group="yaskawa_arm">
-        <joint name="joint_b" value="-0.9228"/>
+        <joint name="joint_b" value="-1.0076"/>
         <joint name="joint_e" value="0"/>
-        <joint name="joint_l" value="-0.6682"/>
+        <joint name="joint_l" value="-0.944"/>
         <joint name="joint_r" value="0"/>
         <joint name="joint_s" value="0"/>
         <joint name="joint_t" value="0"/>
-        <joint name="joint_u" value="-0.7603"/>
+        <joint name="joint_u" value="-0.8393"/>
+    </group_state>
+    <group_state name="open" group="yaskawa_gripper">
+        <joint name="right_joint" value="0"/>
+    </group_state>
+    <group_state name="close" group="yaskawa_gripper">
+        <joint name="right_joint" value="-0.0314"/>
     </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
-    <end_effector name="fingers" parent_link="tool0" group="yaskawa_fingers"/>
+    <end_effector name="gripper" parent_link="tool0" group="yaskawa_gripper"/>
     <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
     <virtual_joint name="world" type="fixed" parent_frame="world" child_link="base_link"/>
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
