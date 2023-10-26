@@ -10,6 +10,9 @@ Panels:
         - /MotionPlanning1/Planning Request1
         - /TF1/Frames1
         - /TF1/Tree1
+        - /DepthCloud1
+        - /DepthCloud1/Auto Size1
+        - /Pose1
       Splitter Ratio: 0.5
     Tree Height: 370
   - Class: rviz_common/Help
@@ -96,125 +99,72 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
-          camera_bottom_accel_frame:
+          camera_accel_frame:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          camera_bottom_accel_optical_frame:
+          camera_accel_optical_frame:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          camera_bottom_bottom_screw_frame:
+          camera_bottom_screw_frame:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          camera_bottom_color_frame:
+          camera_color_frame:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          camera_bottom_color_optical_frame:
+          camera_color_optical_frame:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          camera_bottom_depth_frame:
+          camera_depth_frame:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          camera_bottom_depth_optical_frame:
+          camera_depth_optical_frame:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          camera_bottom_gyro_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          camera_bottom_gyro_optical_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          camera_bottom_infra1_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          camera_bottom_infra1_optical_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          camera_bottom_infra2_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          camera_bottom_infra2_optical_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          camera_bottom_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
           camera_ext:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          camera_upper_accel_frame:
+          camera_gyro_frame:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          camera_upper_accel_optical_frame:
+          camera_gyro_optical_frame:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          camera_upper_bottom_screw_frame:
+          camera_infra1_frame:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          camera_upper_color_frame:
+          camera_infra1_optical_frame:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          camera_upper_color_optical_frame:
+          camera_infra2_frame:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          camera_upper_depth_frame:
+          camera_infra2_optical_frame:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          camera_upper_depth_optical_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          camera_upper_gyro_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          camera_upper_gyro_optical_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          camera_upper_infra1_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          camera_upper_infra1_optical_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          camera_upper_infra2_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          camera_upper_infra2_optical_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          camera_upper_link:
+          camera_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
+          ee_fingers:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
           ext_finger_1:
             Alpha: 1
             Show Axes: false
@@ -350,125 +300,72 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
-          camera_bottom_accel_frame:
+          camera_accel_frame:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          camera_bottom_accel_optical_frame:
+          camera_accel_optical_frame:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          camera_bottom_bottom_screw_frame:
+          camera_bottom_screw_frame:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          camera_bottom_color_frame:
+          camera_color_frame:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          camera_bottom_color_optical_frame:
+          camera_color_optical_frame:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          camera_bottom_depth_frame:
+          camera_depth_frame:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          camera_bottom_depth_optical_frame:
+          camera_depth_optical_frame:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          camera_bottom_gyro_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          camera_bottom_gyro_optical_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          camera_bottom_infra1_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          camera_bottom_infra1_optical_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          camera_bottom_infra2_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          camera_bottom_infra2_optical_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          camera_bottom_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
           camera_ext:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          camera_upper_accel_frame:
+          camera_gyro_frame:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          camera_upper_accel_optical_frame:
+          camera_gyro_optical_frame:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          camera_upper_bottom_screw_frame:
+          camera_infra1_frame:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          camera_upper_color_frame:
+          camera_infra1_optical_frame:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          camera_upper_color_optical_frame:
+          camera_infra2_frame:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          camera_upper_depth_frame:
+          camera_infra2_optical_frame:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          camera_upper_depth_optical_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          camera_upper_gyro_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          camera_upper_gyro_optical_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          camera_upper_infra1_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          camera_upper_infra1_optical_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          camera_upper_infra2_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          camera_upper_infra2_optical_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          camera_upper_link:
+          camera_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
+          ee_fingers:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
           ext_finger_1:
             Alpha: 1
             Show Axes: false
@@ -539,175 +436,76 @@ Visualization Manager:
       Value: true
       Velocity_Scaling_Factor: 0.1
     - Class: rviz_default_plugins/TF
-      Enabled: true
+      Enabled: false
       Frame Timeout: 15
       Frames:
         All Enabled: false
-        Base_Jaw_1:
-          Value: false
-        Base_Jaw_2:
-          Value: false
-        WSG-32_Body:
-          Value: false
-        base_link:
-          Value: false
-        base_link_gripper:
-          Value: false
-        camera_bottom_accel_frame:
-          Value: false
-        camera_bottom_accel_optical_frame:
-          Value: false
-        camera_bottom_bottom_screw_frame:
-          Value: false
-        camera_bottom_color_frame:
-          Value: false
-        camera_bottom_color_optical_frame:
-          Value: false
-        camera_bottom_depth_frame:
-          Value: false
-        camera_bottom_depth_optical_frame:
-          Value: false
-        camera_bottom_gyro_frame:
-          Value: false
-        camera_bottom_gyro_optical_frame:
-          Value: false
-        camera_bottom_infra1_frame:
-          Value: false
-        camera_bottom_infra1_optical_frame:
-          Value: false
-        camera_bottom_infra2_frame:
-          Value: false
-        camera_bottom_infra2_optical_frame:
-          Value: false
-        camera_bottom_link:
-          Value: false
-        camera_ext:
-          Value: false
-        camera_upper_accel_frame:
-          Value: false
-        camera_upper_accel_optical_frame:
-          Value: false
-        camera_upper_bottom_screw_frame:
-          Value: false
-        camera_upper_color_frame:
-          Value: false
-        camera_upper_color_optical_frame:
-          Value: false
-        camera_upper_depth_frame:
-          Value: false
-        camera_upper_depth_optical_frame:
-          Value: false
-        camera_upper_gyro_frame:
-          Value: false
-        camera_upper_gyro_optical_frame:
-          Value: false
-        camera_upper_infra1_frame:
-          Value: false
-        camera_upper_infra1_optical_frame:
-          Value: false
-        camera_upper_infra2_frame:
-          Value: false
-        camera_upper_infra2_optical_frame:
-          Value: false
-        camera_upper_link:
-          Value: false
-        ext_finger_1:
-          Value: false
-        ext_finger_2:
-          Value: false
-        link_b:
-          Value: false
-        link_e:
-          Value: false
-        link_l:
-          Value: false
-        link_r:
-          Value: false
-        link_s:
-          Value: false
-        link_t:
-          Value: false
-        link_u:
-          Value: false
-        push_extension:
-          Value: true
-        tactile_1:
-          Value: false
-        tactile_2:
-          Value: false
-        tool0:
-          Value: false
-        world:
-          Value: false
       Marker Scale: 0.30000001192092896
       Name: TF
       Show Arrows: true
       Show Axes: true
       Show Names: false
       Tree:
-        world:
-          base_link:
-            link_s:
-              link_l:
-                link_e:
-                  link_u:
-                    link_r:
-                      link_b:
-                        link_t:
-                          tool0:
-                            base_link_gripper:
-                              WSG-32_Body:
-                                Base_Jaw_1:
-                                  ext_finger_1:
-                                    tactile_1:
-                                      {}
-                                Base_Jaw_2:
-                                  ext_finger_2:
-                                    tactile_2:
-                                      push_extension:
-                                        {}
-                              camera_bottom_bottom_screw_frame:
-                                camera_bottom_link:
-                                  camera_bottom_accel_frame:
-                                    camera_bottom_accel_optical_frame:
-                                      {}
-                                  camera_bottom_color_frame:
-                                    camera_bottom_color_optical_frame:
-                                      {}
-                                  camera_bottom_depth_frame:
-                                    camera_bottom_depth_optical_frame:
-                                      {}
-                                  camera_bottom_gyro_frame:
-                                    camera_bottom_gyro_optical_frame:
-                                      {}
-                                  camera_bottom_infra1_frame:
-                                    camera_bottom_infra1_optical_frame:
-                                      {}
-                                  camera_bottom_infra2_frame:
-                                    camera_bottom_infra2_optical_frame:
-                                      {}
-                              camera_ext:
-                                camera_upper_bottom_screw_frame:
-                                  camera_upper_link:
-                                    camera_upper_accel_frame:
-                                      camera_upper_accel_optical_frame:
-                                        {}
-                                    camera_upper_color_frame:
-                                      camera_upper_color_optical_frame:
-                                        {}
-                                    camera_upper_depth_frame:
-                                      camera_upper_depth_optical_frame:
-                                        {}
-                                    camera_upper_gyro_frame:
-                                      camera_upper_gyro_optical_frame:
-                                        {}
-                                    camera_upper_infra1_frame:
-                                      camera_upper_infra1_optical_frame:
-                                        {}
-                                    camera_upper_infra2_frame:
-                                      camera_upper_infra2_optical_frame:
-                                        {}
+        {}
       Update Interval: 0
+      Value: false
+    - Alpha: 1
+      Auto Size:
+        Auto Size Factor: 1
+        Value: true
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz_default_plugins/DepthCloud
+      Color: 255; 255; 255
+      Color Image Topic: /camera/color/image_raw
+      Color Transformer: RGB8
+      Color Transport Hint: raw
+      Decay Time: 0
+      Depth Map Topic: /camera/aligned_depth_to_color/image_raw
+      Depth Map Transport Hint: raw
+      Enabled: false
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Max Intensity: 4096
+      Min Color: 0; 0; 0
+      Min Intensity: 0
+      Name: DepthCloud
+      Occlusion Compensation:
+        Occlusion Time-Out: 30
+        Value: false
+      Position Transformer: XYZ
+      Queue Size: 5
+      Selectable: true
+      Size (Pixels): 3
+      Style: Flat Squares
+      Topic Filter: true
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: false
+    - Alpha: 1
+      Axes Length: 0.30000001192092896
+      Axes Radius: 0.009999999776482582
+      Class: rviz_default_plugins/Pose
+      Color: 255; 25; 0
+      Enabled: true
+      Head Length: 0.30000001192092896
+      Head Radius: 0.10000000149011612
+      Name: Pose
+      Shaft Length: 1
+      Shaft Radius: 0.05000000074505806
+      Shape: Axes
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        Filter size: 10
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /dope/pose_santal_ace
       Value: true
   Enabled: true
   Global Options:
@@ -727,25 +525,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 2.65147066116333
+      Distance: 1.773303508758545
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -0.10000000149011612
-        Y: 0.25
-        Z: 0.30000001192092896
+        X: 0.001376669853925705
+        Y: 0.14063876867294312
+        Z: 0.6606349349021912
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.4300001859664917
+      Pitch: 0.4400005638599396
       Target Frame: base_link
       Value: Orbit (rviz_default_plugins)
-      Yaw: 0.3920336961746216
+      Yaw: 1.912032961845398
     Saved: ~
 Window Geometry:
   Displays:
