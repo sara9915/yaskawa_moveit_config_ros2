@@ -3,7 +3,7 @@
     <xacro:arg name="initial_positions_file" default="initial_positions.yaml" />
 
     <!-- Import motoman_sia5f urdf file -->
-    <xacro:include filename="$(find gazebo_simulation_ros2)/description/manipulator.urdf.xacro" />
+    <xacro:include filename="$(find uclv_yaskawa_simulation)/description/manipulator.urdf.xacro" />
 
     <!-- Import control_xacro -->
     <xacro:include filename="motoman_sia5f.ros2_control.xacro" />

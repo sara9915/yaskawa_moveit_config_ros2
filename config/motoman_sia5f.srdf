@@ -43,10 +43,10 @@
         <joint name="joint_u" value="-0.8393"/>
     </group_state>
     <group_state name="open" group="yaskawa_gripper">
-        <joint name="right_joint" value="0"/>
+        <joint name="gripper_joint" value="0"/>
     </group_state>
     <group_state name="close" group="yaskawa_gripper">
-        <joint name="right_joint" value="-0.0314"/>
+        <joint name="gripper_joint" value="-0.0314"/>
     </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="gripper" parent_link="tool0" group="yaskawa_gripper"/>

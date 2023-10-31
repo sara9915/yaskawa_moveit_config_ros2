@@ -8,4 +8,4 @@ initial_positions:
   joint_s: -1.6052273511886597
   joint_t: 0.059695255011320114
   joint_u: 0.03755974769592285
-  right_joint: 0
+  gripper_joint: 0
