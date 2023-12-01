@@ -4,11 +4,8 @@ from launch.actions import (
 )
 from launch.conditions import IfCondition
 from launch.launch_description_sources import PythonLaunchDescriptionSource
-from launch.substitutions import LaunchConfiguration
-
+from launch.substitutions import LaunchConfiguration, PythonExpression
 from launch_ros.actions import Node
-
-from srdfdom.srdf import SRDF
 
 from moveit_configs_utils.launch_utils import (
     DeclareBooleanLaunchArg,
@@ -59,7 +56,6 @@ def generate_launch_description():
             PythonLaunchDescriptionSource(
                 str(moveit_config.package_path / "launch/rsp.launch.py")
             ),
-            # condition=IfCondition(LaunchConfiguration("simulation")),
         )
     )
 
@@ -104,17 +100,16 @@ def generate_launch_description():
         )
     )
 
+    # Launch the node to publish the full_joint_states only when simulation is set to false
     ld.add_action(
         Node(
             package="uclv_yaskawa_simulation",
             executable="yaskawa_wsg_pub",
-            # parameters=[
-            #     moveit_config.robot_description,
-            #     str(moveit_config.package_path / "config/ros2_controllers.yaml"),
-            # ],
-            condition=IfCondition(LaunchConfiguration("simulation")),
+            # if simulation is false, launch the node that publishes the joint states
+            condition=IfCondition(PythonExpression(['"', LaunchConfiguration("simulation"), '" == "false"'])),
         )
     )
+
 
     ld.add_action(
         IncludeLaunchDescription(
