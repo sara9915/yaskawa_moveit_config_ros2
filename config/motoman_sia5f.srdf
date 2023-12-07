@@ -34,13 +34,20 @@
     </group>
     <!--GROUP STATES: Purpose: Define a named state for a particular group, in terms of joint values. This is useful to define states like 'folded arms'-->
     <group_state name="home" group="yaskawa_arm">
-        <joint name="joint_b" value="-1.0076"/>
+        <!-- <joint name="joint_b" value="-1.0076"/>
         <joint name="joint_e" value="0"/>
         <joint name="joint_l" value="-0.944"/>
         <joint name="joint_r" value="0"/>
         <joint name="joint_s" value="0"/>
         <joint name="joint_t" value="0"/>
-        <joint name="joint_u" value="-0.8393"/>
+        <joint name="joint_u" value="-0.8393"/> -->
+        <joint name="joint_b" value="-1.3701"/>
+        <joint name="joint_e" value="-2.3038"/>
+        <joint name="joint_l" value="0.2569"/>
+        <joint name="joint_r" value="-0.1745"/>
+        <joint name="joint_s" value="0.7156"/>
+        <joint name="joint_t" value="-0.093"/>
+        <joint name="joint_u" value="-0.3491"/>
     </group_state>
     <group_state name="open" group="yaskawa_gripper">
         <joint name="gripper_joint" value="0"/>

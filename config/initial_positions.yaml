@@ -1,11 +1,21 @@
 # Default initial positions for motoman_sia5f's ros2_control fake system
 
 initial_positions:
-  joint_b: -1.388614535331726
-  joint_e: 0.005482842214405537
-  joint_l: -0.13221091032028198
-  joint_r: 0.05248947814106941
-  joint_s: -1.6052273511886597
-  joint_t: 0.059695255011320114
-  joint_u: 0.03755974769592285
+  # joint_b: -1.388614535331726
+  # joint_e: 0.005482842214405537
+  # joint_l: -0.13221091032028198
+  # joint_r: 0.05248947814106941
+  # joint_s: -1.6052273511886597
+  # joint_t: 0.059695255011320114
+  # joint_u: 0.03755974769592285
+  # gripper_joint: 0
+  #
+  # PUSHING POSITION
+  joint_b: -1.3701
+  joint_e: -2.3038
+  joint_l: 0.2569
+  joint_r: -0.1745
+  joint_s: 0.7156
+  joint_t: -0.093
+  joint_u: -0.3491
   gripper_joint: 0
